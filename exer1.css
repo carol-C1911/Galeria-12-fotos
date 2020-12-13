@@ -1,0 +1,58 @@
+HTML  CSS   Result
+Edit on 
+body {
+  font: 600 14px/24px "Open Sans", "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", Sans-Serif;
+  margin: 12px 0;
+}
+
+section{
+    width: 700px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.card-container {
+  cursor: pointer;
+  height: 150px;
+  perspective: 600;
+    position: relative;
+  width: 150px;
+display:inline-block;
+    padding: 3px;
+    
+}
+.card {
+  height: 100%;
+  position: absolute;
+  transform-style: preserve-3d;
+  transition: all 1s ease-in-out;
+  width: 100%;
+    
+    
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 6px;
+}
+.card:hover {
+  transform: rotateY(180deg);
+}
+.card .frente {
+  backface-visibility: hidden;
+  height: 100%;
+  position: absolute;
+  overflow: hidden;
+  width: 100%;
+    border-radius: 6px;
+    
+    
+}
+.card .atras {
+  background: #eaeaed;
+  color: #0087cc;
+  line-height: 150px;
+  text-align: center;
+  transform: rotateY(180deg);
+    
+}
